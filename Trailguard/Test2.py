@@ -35,7 +35,7 @@ class HazardReport(BaseModel):
 # 4. Initializes Gemini
 load_dotenv()
 client = genai.Client()
-##client = genai.Client(api_key="AIzaSyCmRI-3ogYQ6gG0X62Qr2ZSv6jUgdeWbNY") #Fix this later
+
 
 # 5. Load the Few-Shot Examples/ Data-set. Add at least 5 for proper severity accuracy
 try:
