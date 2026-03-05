@@ -9,5 +9,8 @@ upload photos and descriptions of problems, while management can see things laid
 RUNNING THE APP:
 [placeholder]
 
+Run this in terminal, make sure the 4 example images are in same folder:
+python analysis.py image.jpg --segment <1-5> --time "08:30 AM" --desc "Insert user desc here, or remove --desc"
+
 LINKS TO DOCS:
 [to be added -- slides are currently offline]
