@@ -15,11 +15,11 @@ Below that, there is a evaluation chart that shows the most recent test results 
 | 9 | Water Pipe Burst| 4-5 | Park Infrastructure | #5 |Y |
 | 10 | Marker Post Damage| 3-4 |Park Infrastructure | #5 |N |
 | 11 | Bridge Plank Damage| 4-5 |Park Infrastructure | #5 |Y |
-| 12 | Damaged/Faded Signage (INFORMATIVE)| 1-2 |Park Infrastructure | #5 |N |
-| 13 | Damaged/Faded Signage (IMPORTANT)| 4-5 |Park Infrastructure | #5 |Y |
+| 12 | Broken Fence | 1-2 |Park Infrastructure | #5 |N |
+| 13 | Rock Blocking Trail| 1-2 | Debris | #5 |N |
 | 14 | Faded Parking Lines | 1-2 |Park Infrastructure | #5 |N |
 | 15 | Park Gate Paint Chipping | 1-2 |Park Infrastructure | #5 |N |
-| 16 | Missing Signage (INFORMATIVE) | 1-2 |Park Infrastructure | #5 |N |
+| 16 | Buck (Aggressive, Large Antlers) | 4-5 |Animal | #5 |Y |
 | 17 | Animal Droppings| 1-2 | Animal | #5 |N |
 | 18 | Black Bear Sighting | 4-5 | Animal | #5 |Y |
 | 19 | Non-Native Fox Sighting (Non-Agressive) | 1-2 | Animal | #5 |N |
