@@ -11,7 +11,7 @@ from PIL import Image
 parser = argparse.ArgumentParser(description="Trailguard")
 parser.add_argument("image")
 parser.add_argument("--segment", type=int, choices=[1, 2, 3, 4, 5], required=True)
-parser.add_argument("--time", required=True)##'10:00 AM' or '2026-03-04'
+parser.add_argument("--time", required=True)## MUST be "2026-03-04 10:00" format
 parser.add_argument("--desc", type=str, default="No user notes provided.")
 
 # Parse the commands typed in the terminal
@@ -91,6 +91,22 @@ try:
     
     parsed_json = json.loads(response.text)
     print(json.dumps(parsed_json, indent=2))
+    # SAVE reports to database for riskengine to analyze
+    db_filename = "hazard_db.json"
+    #Try to open the existing database, or create an empty list if it doesn't exist
+    try:
+        with open(db_filename, "r") as f:
+            db = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        db = []
+        
+    # Add the new report to the list
+    db.append(parsed_json)
+    
+    # Save it back to the file, then confirm
+    with open(db_filename, "w") as f:
+        json.dump(db, f, indent=2)
+    print("This report has been saved to hazard_db.json")
     
 except Exception as e:
     print(f"\n API Error: {e}")
