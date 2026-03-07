@@ -39,7 +39,7 @@ for report in db:
         except ValueError:
             continue
 
-# 5. Calculate the cumulative score ADJUST LATER!!!
+# 5. Calculate the cumulative score
 if reports_48h > 0:
     average_severity = total_severity / reports_48h
     volume_penalty = reports_48h * 1.2
@@ -68,7 +68,7 @@ if risk_score >= 7.0:
     Here are the specific hazards reported in the last 48 hours:
     {hazards_text}
     
-    Write a single, concise sentence explaining why this segment is high priority and needs immediate attention. 
+    Write a single, concise sentence explaining why this segment is high priority and needs immediate attention. Prioritize the highest severity hazard.
     Do not use introductory filler (like "Here is the summary"). Just write the warning.
     """
     
