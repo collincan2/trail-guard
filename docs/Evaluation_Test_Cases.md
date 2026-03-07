@@ -1,5 +1,5 @@
 ﻿# Test Case File
-In this document, 20 test cases will be presented. These are to be run and evaluated to their expected end results, based on accuracy. 
+In this document, 20 test cases will be presented. These are to be run and evaluated to their expected end results, based on accuracy.  
 Below that, there is a evaluation chart that shows the most recent test results completed.
 
 |ID|Desc.  | Risk |Hazard Type|Marker Segment|ESC |
