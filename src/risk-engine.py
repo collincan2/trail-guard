@@ -2,6 +2,7 @@ import argparse
 import json
 import sys
 from datetime import datetime, timedelta
+# Usage: python risk-engine.py --segment x
 
 # 1. Parse the input to risk-engine
 parser = argparse.ArgumentParser(description="Risk Engine and Escalation")
