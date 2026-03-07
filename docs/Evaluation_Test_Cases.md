@@ -4,26 +4,26 @@ Below that, there is a evaluation chart that shows the most recent test results 
 
 |ID|Desc.  | Risk |Hazard Type|Marker Segment|ESC |
 |--|--|--|--|--|--|
-| 1 | Fallen Tree| 3|Debris | #5 |N |
-| 2 | River Rocks| 3|Debris | #5 |N |
-| 3 | Cracked Sidewalk| 3| Park Infrastructure | #5 |N |
-| 4 | Cracked Sidewalk| 3| Park Infrastructure | #5 |N |
-| 5 | Water Pipe Burst| 3| Park Infrastructure | #5 |N |
-| 6 | Animal Droppings| 3| Animal | #5 |N |
-| 7 | Marker Post Damage| 3|Park Infrastructure | #5 |N |
-| 8 | Overgrown Foilage| 3| Fire Hazard | #5 |N |
-| 9 | Overgrown Foilage| 3| Fire Hazard | #5 |N |
-| 10 | Bridge Plank Damage| 3|Park Infrastructure | #5 |N |
-| 11 | Stacked Dry Brush| 3| Fire Hazard | #5 |N |
-| 12 | Discolored Signage (INFORMATIVE)| 3|Park Infrastructure | #5 |N |
-| 13 | Disclored Signage (IMPORTANT)| 3|Park Infrastructure | #5 |N |
-| 14 | Black Bear Sighting | 3| Animal | #5 |N |
-| 15 | Park Bench Damage | 3|Park Infrastructure | #5 |N |
-| 16 | Faded Parking Lines | 3|Park Infrastructure | #5 |N |
-| 17 | Park Gate Paint Chipping | 3|Park Infrastructure | #5 |N |
-| 18 | Fallen Tree | 3|Debris | #5 |N |
-| 19 | Non-Native Fox Sighting (Non-Agressive) | 3| Animal | #5 |N |
-| 20 | Missing Signage | 3|Park Infrastructure | #5 |N |
+| 1 | Fallen Tree| 2-3 |Debris | #5 |N |
+| 2 | River Rocks| 2-3 |Debris | #5 |N |
+| 3 | Overgrown Foliage| 2-3 | Debris  | #5 |N |
+| 4 | Fallen Tree| 2-3 | Debris | #5 |N |
+| 5 | Overgrown Foliage| 2-3| Debris | #5 |N |
+| 6 | Park Bench Damage| 1-2 |Park Infrastructure | #5 |N |
+| 7 | Cracked Sidewalk| 2-3 | Park Infrastructure | #5 |N |
+| 8 | Cracked Sidewalk| 2-3| Park Infrastructure | #5 |N |
+| 9 | Water Pipe Burst| 4-5 | Park Infrastructure | #5 |Y |
+| 10 | Marker Post Damage| 3-4 |Park Infrastructure | #5 |N |
+| 11 | Bridge Plank Damage| 4-5 |Park Infrastructure | #5 |Y |
+| 12 | Damaged/Faded Signage (INFORMATIVE)| 1-2 |Park Infrastructure | #5 |N |
+| 13 | Damaged/Faded Signage (IMPORTANT)| 4-5 |Park Infrastructure | #5 |Y |
+| 14 | Faded Parking Lines | 1-2 |Park Infrastructure | #5 |N |
+| 15 | Park Gate Paint Chipping | 1-2 |Park Infrastructure | #5 |N |
+| 16 | Missing Signage (INFORMATIVE) | 1-2 |Park Infrastructure | #5 |N |
+| 17 | Animal Droppings| 1-2 | Animal | #5 |N |
+| 18 | Black Bear Sighting | 4-5 | Animal | #5 |Y |
+| 19 | Non-Native Fox Sighting (Non-Agressive) | 1-2 | Animal | #5 |N |
+| 20 | Stacked Dry Brush| 3-4 | Fire Hazard | #5 |N |
 
 |ID| JSON Validity| Risk | Hazard Type | ESC |
 |--|--|--|--|--|
