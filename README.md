@@ -6,7 +6,7 @@ upload photos and descriptions of problems, while management can see things laid
 
 *Andrew Cadena - Interface, Risk Assessment, Data Implementation*
 
-RUNNING THE APP:
+### RUNNING THE APP:
 [placeholder]
 
 Run this in terminal, make sure the 4 example images are in same folder:
@@ -20,7 +20,7 @@ python summary_engine.py --segment <1-7> [please get at least 3 reports with ana
 Risk Engine:
 python risk-engine.py --segment <1-7>
 
-OBJECTIVE CORRESPONDENCE:
+### OBJECTIVE CORRESPONDENCE:
 Milestone objectives are listed, and their respective file that satisfies this requirement.
 #1 - Hazard Extraction in analysis.py
 #2 - JSON Validation Layer in validateschema.json and is run during analysis.py
@@ -35,10 +35,10 @@ Milestone objectives are listed, and their respective file that satisfies this r
 #11 - video submitted in blackboard
 
 
-LINKS TO DOCS:
+### LINKS TO DOCS:
 [to be added -- slides are currently offline]
 
-PROJECT SPECIFIC NOTES:
+### PROJECT SPECIFIC NOTES:
 -Spike Plan stress test was completed successfully in class. Therefore, there is *no* results file for this.  
 -The .env is on A's computer, and was ignored by github because it contains the API key needed to run, and that any file that uses the AI includes a "load_dotenv()" to use it.
 - We did not do OBJ #7. It was a little out of scope for the project and how we score risk for this milestone.
