@@ -1,0 +1,83 @@
+[
+  {
+    "trail_segment": 3,
+    "reported_timestamp": "2026-03-05 10:00",
+    "hazard_type": "Damaged Infrastructure",
+    "severity_rating": 2,
+    "ai_description": "An old wooden fence along the trail segment is broken, with several pickets detached or leaning and a horizontal rail broken, indicating a state of disrepair.",
+    "user_notes": "No user notes provided.",
+    "recommended_action": "Assign maintenance crew to repair or replace the damaged fence section to ensure park boundaries and safety are maintained."
+  },
+  {
+    "trail_segment": 3,
+    "reported_timestamp": "2026-03-06 10:00",
+    "hazard_type": "Structural Damage",
+    "severity_rating": 2,
+    "ai_description": "A section of an old wooden picket fence is broken, leaning, and partially collapsed, with several pickets detached or angled, amidst overgrown grass. A paved path is visible in the background.",
+    "user_notes": "No user notes provided.",
+    "recommended_action": "Assign maintenance to repair or replace the broken section of the wooden fence and clear any associated debris."
+  },
+  {
+    "trail_segment": 3,
+    "reported_timestamp": "2026-03-06 12:00",
+    "hazard_type": "Damaged Infrastructure",
+    "severity_rating": 2,
+    "ai_description": "A dilapidated wooden fence, with several broken and missing pickets, is leaning significantly into the grassy area beside a paved path, indicating structural failure and potential aesthetic degradation.",
+    "user_notes": "No user notes provided.",
+    "recommended_action": "Assign maintenance to repair or replace the damaged fence section, ensuring structural integrity and proper boundary demarcation."
+  },
+  {
+    "trail_segment": 3,
+    "reported_timestamp": "2026-03-06 09:00",
+    "hazard_type": "Blocking Debris",
+    "severity_rating": 5,
+    "ai_description": "A large tree has fallen directly across a paved pathway, completely obstructing passage. The tree appears to have snapped, with its main trunk lying across the path. Debris, including leaves and branches, is scattered around the fallen tree, creating a significant access barrier and potential safety risk.",
+    "user_notes": "No user notes provided.",
+    "recommended_action": "Assign maintenance with heavy equipment (e.g., chainsaw, chipper) to cut and remove the fallen tree and clear the path immediately. Consider temporarily closing the trail segment until cleared."
+  },
+  {
+    "trail_segment": 3,
+    "reported_timestamp": "2026-03-06 09:00",
+    "hazard_type": "Blocking Debris",
+    "severity_rating": 5,
+    "ai_description": "A large tree has fallen across a paved park path, completely obstructing it and potentially damaging the surrounding fence.",
+    "user_notes": "No user notes provided.",
+    "recommended_action": "Dispatch a maintenance crew with chainsaws and heavy equipment to clear the fallen tree and inspect for further damage to the path or fence."
+  },
+  {
+    "trail_segment": 3,
+    "reported_timestamp": "2026-03-06 09:00",
+    "hazard_type": "Blocking Debris",
+    "severity_rating": 5,
+    "ai_description": "A large tree has fallen across a fenced paved pathway, completely obstructing passage. The path is covered with leaves and branches from the fallen tree.",
+    "user_notes": "No user notes provided.",
+    "recommended_action": "Assign a crew with chainsaws and heavy lifting equipment for immediate removal of the fallen tree and clearing of debris to reopen the path."
+  },
+  {
+    "trail_segment": 4,
+    "reported_timestamp": "2026-03-06 08:30",
+    "hazard_type": "Slippery Surface",
+    "severity_rating": 2,
+    "ai_description": "A large, muddy, and uneven puddle has formed on a popular dirt path, creating a potential slipping or tripping hazard.",
+    "user_notes": "Theres a muddy and uneven puddle near this popular path.",
+    "recommended_action": "Assign groundskeeping to improve drainage, level the path, and add gravel or woodchips to mitigate the slipping hazard."
+  },
+  {
+    "trail_segment": 4,
+    "reported_timestamp": "2026-03-06 10:30",
+    "hazard_type": "Slippery Surface",
+    "severity_rating": 4,
+    "ai_description": "The trail exhibits significant erosion and is extensively muddy, forming deep ruts and an uneven walking surface. Loose rocks are present along the path's edge. This combination creates a severe slipping and tripping hazard. Red barrier tape is visible in the distance, potentially marking a closed area or additional dangers.",
+    "user_notes": "This trail is heavily eroded and muddy",
+    "recommended_action": "Dispatch a specialized trail maintenance team to immediately assess, regrade, and stabilize the eroded sections, improve drainage to mitigate mud, and clear loose debris. Install prominent warning signs or temporarily close the affected trail segment until remediation is complete."
+  },
+  {
+    "trail_segment": 4,
+    "reported_timestamp": "2026-03-06 04:00",
+    "hazard_type": "Slippery Surface",
+    "severity_rating": 2,
+    "ai_description": "Extensive muddy ground with multiple footprints, indicating wet and soft conditions which could lead to slipping.",
+    "user_notes": "No user notes provided.",
+    "recommended_action": "Assign groundskeeping to assess the drainage in the area and apply gravel or woodchips to stabilize the trail surface."
+  }
+]
