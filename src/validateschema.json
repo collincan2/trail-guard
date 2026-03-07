@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Trail Guard Report Validation",
+  "type": "object",
+
+  "required": [
+    "hazard_type",
+    "severity_rating",
+    "trail_segment",
+    "reported_timestamp",
+    "ai_description",
+    "recommended_action"
+  ],
+
+  "properties": {
+
+    "hazard_type": {
+      "type": "string",
+      "enum": [
+        "Park Infrastructure",
+        "Debris",
+        "Animal",
+        "Fire Hazard"
+      ]
+    },
+
+    "severity_rating": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+
+    "trail_segment": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "reported_timestamp": {
+      "type": "string",
+      "pattern": "^(0?[1-9]|1[0-2]):[0-5][0-9] (AM|PM)$"
+    },
+
+    "ai_description": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "recommended_action": {
+      "type": "string",
+      "minLength": 1
+    }
+
+  }
+}
