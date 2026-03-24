@@ -4,6 +4,7 @@ import sys
 from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from google import genai #This is for section #6
+from location_engine import get_segment_info # Per 5. from Sprint 1 Plan
 load_dotenv()
 
 # 1. Set up the parser
@@ -25,7 +26,12 @@ reports_48h = 0
 total_severity = 0
 recent_hazards = [] # Give the AI context
 
-# 4. Process the Data
+# 4. Location_engine.py use, multiply risk
+loc_info = get_segmentInfo(args.segment)
+traffic_multiplier = loc_info["traffic_multiplier"]
+segment_name = loc_info["name"]
+
+# 5. Process the Data
 for report in db:
     if report["trail_segment"] == args.segment:
         try:
@@ -39,15 +45,15 @@ for report in db:
         except ValueError:
             continue
 
-# 5. Calculate the cumulative score
+# 6. Calculate the cumulative score (WIP)
 if reports_48h > 0:
     average_severity = total_severity / reports_48h
     volume_penalty = reports_48h * 1.2
-    risk_score = average_severity + volume_penalty
+    risk_score = (average_severity + volume_penalty) * traffic_multiplier
 else:
     risk_score = 0.0
 
-# 6. Print the Base Report
+# 7. Print the Base Report
 print(f"Segment: {args.segment}")
 print(f"Reports (48h): {reports_48h}")
 print(f"Risk Score: {risk_score:.1f}")
