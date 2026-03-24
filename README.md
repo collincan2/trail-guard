@@ -27,14 +27,15 @@ python analysis.py FallenTree.jpg --segment 2 --time "08:30 AM" --desc "Large co
    --desc → optional description of the issue<br>
    
 ### Segmented Issue Summary with Action Report:
-Summary of issues and suggested action based on marker segments. 
-_NOTE: You must run the above Analyze Photo command at least **3** times before continuing!_
+Summary of issues and suggested action based on marker segments. <br>
+_NOTE: You must run the above Analyze Photo command at least **3** times before continuing!_ <br>
+
 python summary_engine.py --segment <1-7><br>
 Simply choose the segment you wish to analyze issues for and run the command. It needs to fit in the segment range for your park.
 
 ### Risk Engine:
 Calculates risk for escalation purposes.
-python risk-engine.py --segment <1-7>
+python risk-engine.py --segment <1-7><br>
 Simply choose the segment you wish to analyze risk for and run the command. It needs to fit in the segment range for your park.
 
 
