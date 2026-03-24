@@ -11,7 +11,7 @@ allowedHazards = Literal[
     'Other'
 ]
 
-# 2. Define the Strict Schema
+# 2. Define our final report schema
 class HazardReportSchema(BaseModel):
     trail_segment: int = Field(description="The trail segment ID.")
     reported_timestamp: str = Field(description="The exact timestamp.")
