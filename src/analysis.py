@@ -4,8 +4,8 @@ import sys
 import json
 from dotenv import load_dotenv
 from google import genai
-from pydantic import BaseModel, Field
-from validator import validate_and_parse, HazardReportSchema
+from pydantic import BaseModel, Field, ValidationError
+from validator import HazardReportSchema
 from PIL import Image
 
 # 1. Set up the CLI Argument Parser
@@ -68,36 +68,61 @@ contents = [
     target_img 
 ]
 
-# 7. Call Gemini
-try:
-    response = client.models.generate_content(
-        model="gemini-2.5-flash", 
-        contents=contents,
-        config={
-            "response_mime_type": "application/json",
-            "response_schema": HazardReportSchema,
-        }
-    )
-    print("\n Analysis Complete:\n")
+# 7. Call Gemini 
+max_retries = 3
+attempt = 0
+final_valid_data = None
+
+while attempt < max_retries:
+    attempt += 1
+    print(f"Attempt {attempt} of {max_retries}...")
     
-    parsed_json = json.loads(response.text)
-    print(json.dumps(parsed_json, indent=2))
-    # SAVE reports to database for riskengine to analyze
-    db_filename = "hazard_db.json"
-    #Try to open the existing database, or create an empty list if it doesn't exist
     try:
-        with open(db_filename, "r") as f:
-            db = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        db = []
-        
-    # Add the new report to the list
-    db.append(parsed_json)
+        response = client.models.generate_content(
+            model="gemini-2.5-flash", 
+            contents=contents,
+            config={
+                "response_mime_type": "application/json",
+                "response_schema": HazardReportSchema,
+            }
+        )
+        try:
+            valid_data = HazardReportSchema.model_validate_json(response.text) #FORCES validator.py to run
+            
+            final_valid_data = valid_data.model_dump()
+            print("Validated!")
+            break
+            
+        except ValidationError as e:
+            error_details = [f"Field '{err.get('loc', [''])[0]}': {err.get('msg', '')}" for err in e.errors()]
+            print(f"Validation Failed: {error_details}")
+            
+            error_feedback = f"Your last attempt failed validation: {error_details}. Please fix these exact errors and output valid JSON."
+            contents.append(error_feedback)
+
+    except Exception as e:
+        print(f"API Error on attempt {attempt}: {e}")
+
+# 8. Handle Failure or Save Success
+if not final_valid_data:
+    print("\nModel failed to produce valid data after 3 attempts. Report discarded.")
+    sys.exit(1)
+
+print("\n Final Approved Report:\n")
+print(json.dumps(final_valid_data, indent=2))
+
+# 9. SAVE reports to database 
+db_filename = "hazard_db.json"
+
+try:
+    with open(db_filename, "r") as f:
+        db = json.load(f)
+except (FileNotFoundError, json.JSONDecodeError):
+    db = []
     
-    # Save it back to the file, then confirm
-    with open(db_filename, "w") as f:
-        json.dump(db, f, indent=2)
-    print("This report has been saved to hazard_db.json")
+db.append(final_valid_data)
+
+with open(db_filename, "w") as f:
+    json.dump(db, f, indent=2)
     
-except Exception as e:
-    print(f"\n API Error: {e}")
+print(f" This report has been securely saved to {db_filename}")
