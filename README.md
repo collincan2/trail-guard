@@ -14,7 +14,7 @@ upload photos and descriptions of problems, while management can see things laid
 3. Activate the environment: .\.venv\Scripts\Activate.ps1 (Windows) or source .venv/bin/activate (Mac/Linux)
 4. Install all required dependencies: python -m pip install -r requirements.txt
 
-Make sure the 4 example images(Cracked.jpg, Mududdle.jpg, FallenTree.jpg, wasp-nest.jpg) are in same folder:
+Make sure the 4 example images(Cracked.jpg, Mudpuddle.jpg, FallenTree.jpg, wasp-nest.jpg) are in same folder:
 
 Example Analysis of Photo:
 python analysis.py FallenTree.jpg --segment 2 --time "08:30 AM" --desc "Large collapsed tree blocking the bridge, blocks the main path!" 
