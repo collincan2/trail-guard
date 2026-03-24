@@ -8,11 +8,17 @@ upload photos and descriptions of problems, while management can see things laid
 
 ### RUNNING THE APP:
 [placeholder]
+## Requirements:
+1. Open a terminal in the project folder.
+2. Create a virtual environment: python -m venv .venv
+3. Activate the environment: .\.venv\Scripts\Activate.ps1 (Windows) or source .venv/bin/activate (Mac/Linux)
+4. Install all required dependencies: python -m pip install -r requirements.txt
 
-Run this in terminal, make sure the 4 example images are in same folder:
+Make sure the 4 example images(Cracked.jpg, Mududdle.jpg, FallenTree.jpg, wasp-nest.jpg) are in same folder:
 
-Analysis of Photo:
-python analysis.py image.jpg --segment <1-7> --time "08:30 AM" --desc "Insert user desc here, or remove --desc"
+Example Analysis of Photo:
+python analysis.py FallenTree.jpg --segment 2 --time "08:30 AM" --desc "Large collapsed tree blocking the bridge, blocks the main path!" 
+--desc is optional.
 
 Summary of issues and suggested action based on marker segments:
 python summary_engine.py --segment <1-7> [please get at least 3 reports with analysis.py]
