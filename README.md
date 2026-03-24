@@ -1,3 +1,4 @@
+
 ### TRAIL GUARD: 
 An app designed to provide a dashboard for those who are park management or on a volunteer basis. The project contains a way for people to
 upload photos and descriptions of problems, while management can see things laid out for easy, actionable task creation.
@@ -6,39 +7,47 @@ upload photos and descriptions of problems, while management can see things laid
 
 *Andrew Cadena - Interface, Risk Assessment, Data Implementation*
 
-### RUNNING THE APP:
-[placeholder]
-## Requirements:
+## RUNNING THE APP:
+### Setup:
 1. Open a terminal in the project folder.
-2. Create a virtual environment: python -m venv .venv
+2. Create a virtual environment for organization: python -m venv .venv
 3. Activate the environment: .\.venv\Scripts\Activate.ps1 (Windows) or source .venv/bin/activate (Mac/Linux)
 4. Install all required dependencies: python -m pip install -r requirements.txt
 
-Make sure the 4 example images(Cracked.jpg, Mudpuddle.jpg, FallenTree.jpg, wasp-nest.jpg) are in same folder:
+5. Make sure the 4 example images are in same folder:
+(Cracked.jpg, Mudpuddle.jpg, FallenTree.jpg, wasp-nest.jpg)
 
+### Analyze Photo:
 Example Analysis of Photo:
 python analysis.py FallenTree.jpg --segment 2 --time "08:30 AM" --desc "Large collapsed tree blocking the bridge, blocks the main path!" 
---desc is optional.
 
-Summary of issues and suggested action based on marker segments:
-python summary_engine.py --segment <1-7> [please get at least 3 reports with analysis.py]
+   FallenTree.jpg → image to analyze
+   --segment 2 → location/area (1–7)
+   --time → time of report
+   --desc → optional description of the issue
+   
+### Segmented Issue Summary with Action Report:
+Summary of issues and suggested action based on marker segments. 
+_NOTE: You must run the above Analyze Photo command at least **3** times before continuing!_
+python summary_engine.py --segment <1-7> 
 
-Risk Engine:
+### Risk Engine:
+Calculates risk for escalation purposes.
 python risk-engine.py --segment <1-7>
 
-### OBJECTIVE CORRESPONDENCE:
-Milestone objectives are listed, and their respective file that satisfies this requirement.
-#1 - Hazard Extraction in analysis.py
-#2 - JSON Validation Layer in validateschema.json and is run during analysis.py
-#3 - Risk scoring done in risk-engine.py
-#4 - Found in summary_engine.py
-#5 - Found in risk-engine.py
-#6 - Found in risk-engine.py
-#7 - excluded -- see below
-#8- Evaluation_Test_Cases is the pilot file
-#9 - PRD updated
-#10 - Under docs/Architecture.png
-#11 - video submitted in blackboard
+## OBJECTIVE CORRESPONDENCE:
+Milestone objectives are listed, and their respective file that satisfies this requirement. <br>
+#1 - Hazard Extraction in analysis.py<br>
+#2 - JSON Validation Layer in validateschema.json and is run during analysis.py<br>
+#3 - Risk scoring done in risk-engine.py<br>
+#4 - Found in summary_engine.py<br>
+#5 - Found in risk-engine.py<br>
+#6 - Found in risk-engine.py<br>
+#7 - excluded -- see below<br>
+#8- Evaluation_Test_Cases is the pilot file<br>
+#9 - PRD updated<br>
+#10 - Under docs/Architecture.png<br>
+#11 - video submitted in blackboard<br>
 
 
 ### LINKS TO DOCS:
