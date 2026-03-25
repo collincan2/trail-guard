@@ -6,7 +6,7 @@
 
 # Milestone 2 Objective
 
-One week from now, on **April 1, 2026**, you must demonstrate a working MVP for the same single-park pilot.
+One week from now, on **April 5, 2026**, you must demonstrate a working MVP for the same single-park pilot.
 
 The standard is no longer "we have most of the pieces." The standard is:
 
