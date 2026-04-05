@@ -9,7 +9,7 @@ from risk_engine import calculate_risk_score
 
 load_dotenv()
 
-print("Calculating park-wide metrics and generating Daily Briefing...\n")
+print("Generating Daily Briefing...\n")
 
 try:
     with open("hazard_db.json", "r") as f:
