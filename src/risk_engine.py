@@ -34,7 +34,7 @@ if __name__ == "__main__":
     total_severity = 0
     recent_hazards = [] 
 
-    loc_info = get_segment_info(args.segment)
+    loc_info = get_segmentInfo(args.segment)
     traffic_multiplier = loc_info["traffic_multiplier"]
     segment_name = loc_info["name"]
 
