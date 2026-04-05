@@ -31,13 +31,16 @@ load_dotenv()
 client = genai.Client()
 
 # 4. Load Few-Shot Examples
+EXAMPLE_DIR = "Examples" 
+
 try:
-    example_img_1 = Image.open("FallenTree.jpg")
-    example_img_2 = Image.open("Mudpuddle.jpg")
-    example_img_3 = Image.open("Cracked.jpg")
-    example_img_4 = Image.open("wasp-nest.jpg")
+    # Use os.path.join to safely connect the folder name and file name
+    example_img_1 = Image.open(os.path.join(EXAMPLE_DIR, "FallenTree.jpg"))
+    example_img_2 = Image.open(os.path.join(EXAMPLE_DIR, "Mudpuddle.jpg"))
+    example_img_3 = Image.open(os.path.join(EXAMPLE_DIR, "Cracked.jpg"))
+    example_img_4 = Image.open(os.path.join(EXAMPLE_DIR, "wasp-nest.jpg"))
 except FileNotFoundError:
-    print(" Error: Keep the 4 examples in the folder for the AI's training examples!!")
+    print(f" Error: Keep the 4 examples in the '{EXAMPLE_DIR}' folder for the AI's training examples!!")
     sys.exit(1)
 
 # 5. Format the User's Metadata
