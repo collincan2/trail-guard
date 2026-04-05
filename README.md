@@ -9,13 +9,10 @@ upload photos and descriptions of problems, while management can see things laid
 
 ## RUNNING THE APP:
 ### Setup:
-1. Open a terminal in the project folder.
-2. Create a virtual environment for organization: python -m venv .venv
-3. Activate the environment: .\.venv\Scripts\Activate.ps1 (Windows) or source .venv/bin/activate (Mac/Linux)
-4. Install all required dependencies: python -m pip install -r requirements.txt
-
-5. Make sure the 4 example images are in same folder:
-(Cracked.jpg, Mudpuddle.jpg, FallenTree.jpg, wasp-nest.jpg)
+1. Open a terminal in the project folder, specifically src folder.
+2. Install all required dependencies: python -m pip install -r requirements.txt
+3. Move any .pngs files into the src folder, along with a .env containing an API key
+4. Start with analysis.py, then risk_engine.py, then after a couple reports move onto briefing_engine.py
 
 ### Analyze Photo:
 Example Analysis of Photo:
@@ -37,6 +34,11 @@ Simply choose the segment you wish to analyze issues for and run the command. It
 Calculates risk for escalation purposes.
 python risk-engine.py --segment <1-7><br>
 Simply choose the segment you wish to analyze risk for and run the command. It needs to fit in the segment range for your park.
+
+### Ranger Daily Briefing
+Creates a daily briefing for rangers.
+python briefing_engine.py
+This will create a dated .txt file containing top 3 priority segments,main hazard categories observed, why each top segment is prioritized, and suggested operational focus areas for the day
 
 
 ## OBJECTIVE CORRESPONDENCE:
