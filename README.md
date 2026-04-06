@@ -12,7 +12,8 @@ upload photos and descriptions of problems, while management can see things laid
 1. Open a terminal in the project folder, specifically src folder.
 2. Install all required dependencies: python -m pip install -r requirements.txt
 3. Move any .pngs files into the src folder, along with a .env containing an API key
-4. Start with analysis.py, then risk_engine.py, then after a couple reports move onto briefing_engine.py
+4. create a .env file in the src folder, and fill it with 'GEMINI_API_KEY=<your_api_key_here>'
+5. Start with analysis.py, then risk_engine.py, then after a couple reports move onto briefing_engine.py
 
 ### Analyze Photo:
 Example Analysis of Photo:
