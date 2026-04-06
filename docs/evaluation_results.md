@@ -1,3 +1,6 @@
+## Results from Test Cases
+Here are the results from the test cases, ran manually.
+
 |ID| JSON Validity| Risk | Hazard Type | ESC |
 |--|--|--|--|--|
 | 1 | 100% | Y | Y | N/A |
