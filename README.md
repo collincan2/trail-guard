@@ -56,6 +56,14 @@ Milestone objectives are listed, and their respective file that satisfies this r
 #10 - Under docs/Architecture.png<br>
 #11 - video submitted in blackboard<br>
 
+## OBJECTIVE CORRESPONDENCE: MILESTONE 2
+#1 - ReadMe updated. 
+#2 - Files validated to exist, and are named per deliverable instructions.
+#3 - /docs/report_schema.md created, and includes deliverable components.
+#4 - /docs/risk_scoring.md includes deliverable components.
+#5 - ranger briefing functional and includes output matching deliverable components.
+#6 - /docs/evaluation_test_cases.md was correct. the /docs/evaluation_results exists now, and is confirmed to be accurate.
+#7 - general renaming of repo files to match lowercase consistency and formatting.
 
 ### LINKS TO DOCS:
 [to be added -- slides are currently offline]
