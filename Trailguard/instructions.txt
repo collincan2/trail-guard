@@ -1,7 +1,0 @@
-###WIP###
-
-To run this, first install requirements in terminal:
-pip install google-genai pydantic pillow 
-then to run it, use
-python3 Test2.py <image>
-Keep test files in same folder
