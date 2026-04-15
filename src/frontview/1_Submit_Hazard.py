@@ -1,10 +1,22 @@
 # src/frontview/pages/1_Submit_Hazard.py
 import streamlit as st
 import datetime
+import sys
+import os
+import json
+
+# 1. Connect to your root folder 
+# This climbs up 3 folders from pages -> frontview -> src -> root
+current_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.abspath(os.path.join(current_dir, "../../../"))
+if root_dir not in sys.path:
+    sys.path.append(root_dir)
+
+# Import your newly refactored function
+from analysis import analyze_hazard_image
 
 st.set_page_config(page_title="Submit Hazard")
-
-st.title("Upload Field Report")
+st.title("📸 Upload Field Report")
 st.markdown("Submit a new hazard image for AI categorization and severity scoring.")
 
 # Build the input form
@@ -15,22 +27,32 @@ with st.form("hazard_submission_form"):
     with col1:
         segment = st.selectbox("Trail Segment", [1, 2, 3, 4, 5, 6, 7])
     with col2:
-        # Defaults to the current date/time for the 48-hour calculation logic
+        # Default to exactly the YYYY-MM-DD HH:MM format
         report_time = st.text_input("Timestamp", value=datetime.datetime.now().strftime("%Y-%m-%d %H:%M"))
         
     user_desc = st.text_area("Ranger Notes (Optional)")
-    
-    # The submit button
     submitted = st.form_submit_button("Run AI Analysis")
 
+# When the user clicks the button
 if submitted:
     if uploaded_file is not None:
-        # UI Feedback
         with st.spinner("Analyzing image and validating JSON schema..."):
             
-            # TO-DO import your analysis logic here, pass in the uploaded_file 
-            # and save it to hazard_db.json under 'hazard_type'
+            # 2. Fire the engine! Pass the web inputs into your backend logic.
+            success, result = analyze_hazard_image(
+                image_input=uploaded_file, 
+                segment_id=segment, 
+                timestamp=report_time, 
+                description=user_desc
+            )
             
-            st.success(f"Report successfully validated and saved to database for Segment {segment}!")
+            if success:
+                st.success(f"Report validated and saved to database for Segment {segment}!")
+                
+                # Expandable box to show the user the JSON the AI generated
+                with st.expander("View Generated JSON Report"):
+                    st.json(result)
+            else:
+                st.error(f"Pipeline Failed: {result}")
     else:
-        st.error("Please upload an image to proceed.")
+        st.warning("Please upload an image to proceed.")
