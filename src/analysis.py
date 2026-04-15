@@ -141,7 +141,7 @@ if __name__ == "__main__":
     if success:
         print("\n Final Approved Report:\n")
         print(json.dumps(result, indent=2))
-        print("\n💾This report has been securely saved to hazard_db.json")
+        print("\n This report has been securely saved to hazard_db.json")
     else:
-        print(f"\n❌ Pipeline Failed: {result}")
+        print(f"\n Pipeline Failed: {result}")
         sys.exit(1)
