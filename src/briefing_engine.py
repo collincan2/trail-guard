@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 import os
 from dotenv import load_dotenv
 from google import genai
-from location_engine import get_segment_info
+from location_engine import get_segmentInfo
 from risk_engine import calculate_risk_score
 
 load_dotenv()
@@ -38,7 +38,7 @@ def generate_daily_briefing():
                 except ValueError:
                     continue
         
-        loc_info = get_segment_info(seg_id)
+        loc_info = get_segmentInfo(seg_id)
         multiplier = loc_info["traffic_multiplier"]
         score = calculate_risk_score(reports_48h, total_severity, multiplier)
             

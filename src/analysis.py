@@ -21,8 +21,13 @@ def analyze_hazard_image(image_input, segment_id: int, timestamp: str, descripti
 
     client = genai.Client()
 
-    # 2. Load Few-Shot Examples (Using the examples folder)
-    EXAMPLE_DIR = "examples"
+    # 2. Load Few-Shot Examples 
+    # This automatically finds the exact folder where analysis.py is sitting
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # And looks for the 'examples' folder right next to it
+    EXAMPLE_DIR = os.path.join(current_dir, "examples")
+
     try:
         example_img_1 = Image.open(os.path.join(EXAMPLE_DIR, "FallenTree.jpg"))
         example_img_2 = Image.open(os.path.join(EXAMPLE_DIR, "Mudpuddle.jpg"))

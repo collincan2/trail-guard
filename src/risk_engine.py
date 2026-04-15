@@ -5,7 +5,7 @@ import sys
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from google import genai
-from location_engine import get_segment_info
+from location_engine import get_segmentInfo
 
 load_dotenv()
 
@@ -28,7 +28,7 @@ def analyze_segment_risk(segment_id: int):
     total_severity = 0
     recent_hazards = [] 
 
-    loc_info = get_segment_info(segment_id)
+    loc_info = get_segmentInfo(segment_id)
     traffic_multiplier = loc_info["traffic_multiplier"]
     segment_name = loc_info["name"]
 

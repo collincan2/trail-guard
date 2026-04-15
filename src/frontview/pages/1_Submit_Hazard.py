@@ -1,18 +1,18 @@
-# src/frontview/pages/1_Submit_Hazard.py
 import streamlit as st
 import datetime
 import sys
 import os
-import json
 
-# 1. Connect to your root folder 
-# This climbs up 3 folders from pages -> frontview -> src -> root
+# Get current folder (pages)
 current_dir = os.path.dirname(os.path.abspath(__file__))
-root_dir = os.path.abspath(os.path.join(current_dir, "../../../"))
-if root_dir not in sys.path:
-    sys.path.append(root_dir)
 
-# Import your newly refactored function
+# Climb up exactly TWO levels to hit the 'src' folder
+src_dir = os.path.abspath(os.path.join(current_dir, "../../")) 
+
+# Add it to the system path
+if src_dir not in sys.path:
+    sys.path.append(src_dir)
+
 from analysis import analyze_hazard_image
 
 st.set_page_config(page_title="Submit Hazard")
