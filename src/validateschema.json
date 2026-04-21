@@ -12,6 +12,10 @@
     "recommended_action"
   ],
 
+  "optional": [
+    "user_notes",
+  ],
+
   "properties": {
 
     "hazard_type": {
@@ -20,7 +24,8 @@
         "Park Infrastructure",
         "Debris",
         "Animal",
-        "Fire Hazard"
+        "Fire Hazard",
+        "Other"
       ]
     },
 
@@ -31,8 +36,9 @@
     },
 
     "trail_segment": {
-      "type": "string",
-      "minLength": 1
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 7
     },
 
   "reported_timestamp": {
@@ -46,6 +52,11 @@
     },
 
     "recommended_action": {
+      "type": "string",
+      "minLength": 1
+    },
+    
+    "user_notes":{
       "type": "string",
       "minLength": 1
     }
