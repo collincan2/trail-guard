@@ -33,7 +33,7 @@ with tab1:
                     "Segment": f"Segment {data['segment_id']} - {data['segment_name']}",
                     "Reports (48h)": data['reports_48h'],
                     "Risk Score": data['risk_score'],
-                    "Escalation State": "🚨 ESCALATED" if data['escalation_triggered'] else "✅ Safe"
+                    "Escalation State": " ESCALATED" if data['escalation_triggered'] else " Safe"
                 })
     
     if overview_data:
