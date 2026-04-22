@@ -14,9 +14,11 @@ upload photos and descriptions of problems, while management can see things laid
 3. Move any .pngs files into the src folder, along with a .env containing an API key
 4. create a .env file in the src folder, and fill it with 'GEMINI_API_KEY=<your_api_key_here>'
 5. Start the program with streamlit run
- '''
+   
+ ```
    src/frontview/home.py
- '''
+ ```
+ 
 6. , then after a couple reports move onto briefing_engine.py
 
 ### Analyze Photo:
