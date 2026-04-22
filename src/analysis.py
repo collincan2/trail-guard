@@ -105,17 +105,19 @@ def analyze_hazard_image(image_input, segment_id: int, timestamp: str, descripti
     if not final_valid_data:
         return False, "CRITICAL ERROR: Model failed to produce valid data after 3 attempts."
 
-    # 7. SAVE reports to database
-    db_filename = "hazard_db.json"
+    # 7. SAVE reports to database (Anchored to src/)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    db_path = os.path.join(script_dir, "hazard_db.json")
+    
     try:
-        with open(db_filename, "r") as f:
+        with open(db_path, "r") as f:
             db = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         db = []
         
     db.append(final_valid_data)
     
-    with open(db_filename, "w") as f:
+    with open(db_path, "w") as f:
         json.dump(db, f, indent=2)
         
     return True, final_valid_data

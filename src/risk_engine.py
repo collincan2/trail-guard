@@ -17,8 +17,12 @@ def calculate_risk_score(reports_48h: int, total_severity: int, traffic_multipli
     return 0.0
 
 def analyze_segment_risk(segment_id: int):
+    # Anchor DB to src/
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    db_path = os.path.join(script_dir, "hazard_db.json")
+    
     try:
-        with open("hazard_db.json", "r") as f:
+        with open(db_path, "r") as f:
             db = json.load(f)
     except FileNotFoundError:
         return {"error": "No database found. Run analysis.py first to generate data."}

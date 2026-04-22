@@ -10,8 +10,12 @@ from risk_engine import calculate_risk_score
 load_dotenv()
 
 def generate_daily_briefing():
+    # Anchor DB to src/
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    db_path = os.path.join(script_dir, "hazard_db.json")
+    
     try:
-        with open("hazard_db.json", "r") as f:
+        with open(db_path, "r") as f:
             db = json.load(f)
     except FileNotFoundError:
         return False, "No database found. Please submit a report first."
@@ -77,17 +81,18 @@ def generate_daily_briefing():
             contents=prompt
         )
         
-        # Save to the root directory
+        # Anchor output file to src/
         date_str = now.strftime("%Y-%m-%d")
         filename = f"daily_briefing_{date_str}.txt"
+        filepath = os.path.join(script_dir, filename)
         
-        with open(filename, "w", encoding="utf-8") as f:
+        with open(filepath, "w", encoding="utf-8") as f:
             f.write(f"Ranger Daily Briefing - {now.strftime('%A, %B %d, %Y')}\n")
             f.write("=" * 60 + "\n\n")
             f.write(response.text.strip())
             f.write("\n\n" + "=" * 60 + "\n")
             
-        return True, filename
+        return True, filepath
         
     except Exception as e:
         return False, f"API error: {e}"

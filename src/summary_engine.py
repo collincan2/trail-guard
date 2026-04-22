@@ -11,8 +11,12 @@ load_dotenv()
 
 print("Calculating park-wide metrics and generating Daily Briefing...\n")
 
+# Anchor DB to src/
+script_dir = os.path.dirname(os.path.abspath(__file__))
+db_path = os.path.join(script_dir, "hazard_db.json")
+
 try:
-    with open("hazard_db.json", "r") as f:
+    with open(db_path, "r") as f:
         db = json.load(f)
 except FileNotFoundError:
     print("Error: No database found. Run analysis.py first.")
@@ -84,16 +88,18 @@ try:
         contents=prompt
     )
     
+    # Anchor output file to src/
     date_str = now.strftime("%Y-%m-%d")
     filename = f"daily_briefing_{date_str}.txt"
+    filepath = os.path.join(script_dir, filename)
     
-    with open(filename, "w", encoding="utf-8") as f:
+    with open(filepath, "w", encoding="utf-8") as f:
         f.write(f"Ranger Daily Briefing - {now.strftime('%A, %B %d, %Y')}\n")
         f.write("=" * 60 + "\n\n")
         f.write(response.text.strip())
         f.write("\n\n" + "=" * 60 + "\n")
         
-    print(f"The daily briefing has been generated and saved to: {filename}")
+    print(f"The daily briefing has been generated and saved to: {filepath}")
     
 except Exception as e:
     print(f"API error: {e}")
