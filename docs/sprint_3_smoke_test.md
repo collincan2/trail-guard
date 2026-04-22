@@ -9,3 +9,8 @@ the severity rating of reports to segment 3
 ![Sucessful JSON output of broken-fence.jpg ](images/fence1success.png)
 
 ![Risk engine output](images/RiskEngine1.png)
+
+
+Here's the report for an image of a large wasp nest by segment 1. The location multiplier is higher than other segments due to the high traffic, resulting in a higher cumulative risk score.
+![Result of wasp nest](images/wasp2success.png)
+![Risk engine output](images/risk2.png)
