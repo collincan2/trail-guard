@@ -4,4 +4,6 @@
 
 
 
-  ![Successful result of image.png, lorem ipsum ](images/success-test-1.png)
+  ![Code 503 generated, indicitating high traffic/usage of gemini vision API ](images/trafficfail1.png)
+ 
+    ![Sucessful JSON output of broken-fence.jpg ](images/fence1success.png)
