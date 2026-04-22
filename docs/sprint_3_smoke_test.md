@@ -1,4 +1,4 @@
-###Filler
+### Smoke Test Results
 
 Here, code 503 is generated, indicitating high traffic/usage of gemini vision API:
 
