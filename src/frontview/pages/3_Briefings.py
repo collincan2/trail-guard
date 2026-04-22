@@ -12,14 +12,14 @@ if root_dir not in sys.path:
 
 from briefing_engine import generate_daily_briefing
 
-st.set_page_config(page_title="Ranger Briefings", page_icon="📋")
+st.set_page_config(page_title="Ranger Briefings")
 st.title(" Daily Ranger Briefings")
 st.markdown("Generate and review AI-aggregated dispatch priorities.")
 
 # Add a button to generate a new briefing from the UI
-if st.button("🔄 Generate Today's Briefing Now"):
+if st.button(" Generate Today's Briefing Now"):
     with st.spinner("Compiling park-wide data and writing briefing..."):
-        success, result = generate_daily_briefing()
+        success, result = generate_daily_briefing() ##//
         if success:
             st.success(f"Generated new briefing: {result}")
         else:
@@ -28,7 +28,7 @@ if st.button("🔄 Generate Today's Briefing Now"):
 st.markdown("---")
 
 # 3_briefings will look for .txt files in the root directory.
-briefing_files = glob.glob("daily_briefing_*.txt")
+briefing_files = glob.glob("src/daily_briefing_*.txt") 
 briefing_files.sort(reverse=True) 
 
 if not briefing_files:
@@ -39,5 +39,6 @@ else:
     if selected_file:
         with open(selected_file, "r", encoding="utf-8") as f:
             briefing_content = f.read()
+            
             
         st.markdown(briefing_content)

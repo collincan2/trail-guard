@@ -15,7 +15,7 @@ from risk_engine import analyze_segment_risk
 st.set_page_config(page_title="Risk Engine", layout="wide")
 st.title(" Risk Engine & Hazard Database")
 
-# Use 3 tabs now, placing the Overview front and center for the demo
+
 tab1, tab2, tab3 = st.tabs(["Park-Wide Overview", "Live Risk Analysis", "Hazard Database"])
 
 # --- TAB 1: Park-Wide Overview ---

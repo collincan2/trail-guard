@@ -21,7 +21,7 @@ st.markdown("Submit a new hazard image for AI categorization and severity scorin
 
 # Build the input form
 with st.form("hazard_submission_form"):
-    uploaded_file = st.file_uploader("Select Hazard Image", type=["jpg", "jpeg", "png"])
+    uploaded_file = st.file_uploader("Submit Hazard Image", type=["jpg", "jpeg", "png"])
     
     col1, col2 = st.columns(2)
     with col1:
@@ -30,7 +30,7 @@ with st.form("hazard_submission_form"):
         # Default to exactly the YYYY-MM-DD HH:MM format
         report_time = st.text_input("Timestamp", value=datetime.datetime.now().strftime("%Y-%m-%d %H:%M"))
         
-    user_desc = st.text_area("Ranger Notes (Optional)")
+    user_desc = st.text_area(" Notes (Optional)")
     submitted = st.form_submit_button("Run AI Analysis")
 
 # When the user clicks the button
@@ -38,7 +38,7 @@ if submitted:
     if uploaded_file is not None:
         with st.spinner("Analyzing image and validating JSON schema..."):
             
-            # 2. Fire the engine! Pass the web inputs into your backend logic.
+            # 2. Pass the web inputs
             success, result = analyze_hazard_image(
                 image_input=uploaded_file, 
                 segment_id=segment, 
@@ -53,6 +53,6 @@ if submitted:
                 with st.expander("View Generated JSON Report"):
                     st.json(result)
             else:
-                st.error(f"Pipeline Failed: {result}")
+                st.error(f"Analyze Failed: {result}")
     else:
         st.warning("Please upload an image to proceed.")
