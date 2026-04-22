@@ -9,8 +9,11 @@ upload photos and descriptions of problems, while management can see things laid
 
 ## RUNNING THE APP:
 ### Setup:
-1. Open a terminal in the project folder, specifically src folder.
-2. Install all required dependencies: python -m pip install -r src/requirements.txt
+1. Open a terminal in the project folder.
+2. Install all required dependencies:
+ ``` 
+ python -m pip install -r src/requirements.txt
+ ```
 3. Move any .pngs files into the src folder, along with a .env containing an API key
 4. create a .env file in the src folder, and fill it with 'GEMINI_API_KEY=<your_api_key_here>'
 5. Start the program with streamlit run
@@ -19,7 +22,6 @@ upload photos and descriptions of problems, while management can see things laid
    src/frontview/home.py
  ```
  
-6. , then after a couple reports move onto briefing_engine.py
 
 ### Analyze Photo:
 Example Analysis of Photo:
