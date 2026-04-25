@@ -19,7 +19,7 @@ upload photos and descriptions of problems, while management can see things laid
 5. Start the program with streamlit run
    
  ```
-   src/frontview/home.py
+ streamlit run src/frontview/home.py
  ```
  
 
