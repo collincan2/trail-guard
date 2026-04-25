@@ -3,7 +3,7 @@ In this document, 20 test cases will be presented. These are to be run and evalu
 
 There is a evaluation chart that shows the most recent test results completed in evaluation_results.  
 
-NOTE: There is not an escalation rate category, because that would not be possible without segment aggregation.
+NOTE: There is not an escalation rate category, because that would not be possible without segment aggregation. See below for notes on ESC rate testing.
 
 |ID|Desc.  | Risk |Hazard Type|Marker Segment|
 |--|--|--|--|--|
@@ -27,3 +27,14 @@ NOTE: There is not an escalation rate category, because that would not be possib
 | 18 | Black Bear Sighting | 4-5 | Animal | #5 |
 | 19 | Non-Native Fox Sighting (Non-Agressive) | 1-2 | Animal | #7 |
 | 20 | Stacked Dry Brush| 3-4 | Fire Hazard | #7 |
+
+# Escalation Test Cases:
+The segments 1,5, are already set to exceed ESC rates. By running the above, these segments will show a trigger.  
+
+By adding the following cases, segment 2 will also cross the required 10.0 Risk Score threshold and trigger an ESC warning.  
+
+|ID|Desc.  | Risk |Hazard Type|Marker Segment|
+|--|--|--|--|--|
+| 20.1 | Park Brush Fire | 4-5 |Fire Hazard | #2 |  
+
+* Segments 1, 2, and 5 will all show ESC triggers.
