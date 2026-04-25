@@ -37,4 +37,4 @@ By adding the following cases, segment 2 will also cross the required 10.0 Risk 
 |--|--|--|--|--|
 | 20.1 | Park Brush Fire | 4-5 |Fire Hazard | #2 |  
 
-* Segments 1, 2, and 5 will all show ESC triggers.
+* Segments 1, 2, and 5 will all show ESC triggers. Expected scores are 10.4, 10.5, and 14.3, respectively.
