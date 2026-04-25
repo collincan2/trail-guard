@@ -16,6 +16,8 @@ def analyze_hazard_image(image_input, segment_id: int, timestamp: str, descripti
     # 1. Try to open the target image (handles both file paths and Streamlit UploadedFiles)
     try:
         target_img = Image.open(image_input)
+        target_img = target_img.convert("RGB") #Compresses file 
+        target_img.thumbnail((1920, 1080))
     except Exception as e:
         return False, f"Error opening image: {e}"
 
