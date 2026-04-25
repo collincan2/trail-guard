@@ -5,10 +5,27 @@ from dotenv import load_dotenv
 from google import genai
 from pydantic import BaseModel, Field, ValidationError
 from validator import HazardReportSchema
+import streamlit as st
 from PIL import Image
 
 # Initialize Environment
 load_dotenv()
+
+@st.cache_resource
+def load_few_shot_examples():
+    #Loads the example images into RAM exactly once per server boot.
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    EXAMPLE_DIR = os.path.join(current_dir, "examples")
+
+    try:
+        return {
+            "ex1": Image.open(os.path.join(EXAMPLE_DIR, "FallenTree.jpg")),
+            "ex2": Image.open(os.path.join(EXAMPLE_DIR, "Mudpuddle.jpg")),
+            "ex3": Image.open(os.path.join(EXAMPLE_DIR, "Cracked.jpg")),
+            "ex4": Image.open(os.path.join(EXAMPLE_DIR, "wasp-nest.jpg"))
+        }
+    except FileNotFoundError:
+        return None
 
 def analyze_hazard_image(image_input, segment_id: int, timestamp: str, description: str):
     
@@ -23,20 +40,16 @@ def analyze_hazard_image(image_input, segment_id: int, timestamp: str, descripti
 
     client = genai.Client()
 
-    # 2. Load Few-Shot Examples 
-    # This automatically finds the exact folder where analysis.py is sitting
-    current_dir = os.path.dirname(os.path.abspath(__file__))
+    # 2. Load Few-Shot Examples (Lightning Fast via RAM Cache)
+    examples = load_few_shot_examples()
     
-    # And looks for the 'examples' folder right next to it
-    EXAMPLE_DIR = os.path.join(current_dir, "examples")
+    if not examples:
+        return False, "Error: Keep the 4 examples in the 'examples' folder!"
 
-    try:
-        example_img_1 = Image.open(os.path.join(EXAMPLE_DIR, "FallenTree.jpg"))
-        example_img_2 = Image.open(os.path.join(EXAMPLE_DIR, "Mudpuddle.jpg"))
-        example_img_3 = Image.open(os.path.join(EXAMPLE_DIR, "Cracked.jpg"))
-        example_img_4 = Image.open(os.path.join(EXAMPLE_DIR, "wasp-nest.jpg"))
-    except FileNotFoundError:
-        return False, f"Error: Keep the 4 examples in the '{EXAMPLE_DIR}' folder!"
+    example_img_1 = examples["ex1"]
+    example_img_2 = examples["ex2"]
+    example_img_3 = examples["ex3"]
+    example_img_4 = examples["ex4"]
 
     # 3. Format the User's Metadata
     user_context = f"Trail Segment: {segment_id}\nTimestamp: {timestamp}\nUser Description: {description}"
