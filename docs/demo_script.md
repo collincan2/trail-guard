@@ -10,8 +10,9 @@ Our app is Trail Guard, an app designed for park management and visitors. Parks 
 To start, I will take a hazard that has occurred in the test park [Mustang Park], and upload it to the app. The app will analyze the issue, and then recommend a course of action. Additionally, it will sort it under the park segment where it was reported, categorize it by issue type [Examples: Fire Hazard, Debris], assign it a risk level based on danger or hazard intensity, and timestamp it for reference.
 
  *Upload test image*  
- *Upload CASE 20 (stacked dry brush)*
- *Upload CASE 18 (large black bear, aggressive)*
+ *Upload CASE 20 (stacked dry brush)*  
+ 
+ *Upload CASE 18 (large black bear, aggressive) [Triggers ESC]*
 
   **(3) show JSON validation** (COLLIN)
 
