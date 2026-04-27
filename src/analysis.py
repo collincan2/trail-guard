@@ -136,29 +136,3 @@ def analyze_hazard_image(image_input, segment_id: int, timestamp: str, descripti
         json.dump(db, f, indent=2)
         
     return True, final_valid_data
-
-
-#TEST section VVVVV
-if __name__ == "__main__":
-    import sys
-    
-    parser = argparse.ArgumentParser(description="Trailguard CLI Analysis")
-    parser.add_argument("image", help="Path to the hazard image")
-    parser.add_argument("--segment", type=int, choices=[1, 2, 3, 4, 5, 6, 7], required=True)
-    parser.add_argument("--time", required=True, help="MUST be 'YYYY-MM-DD HH:MM' format")
-    parser.add_argument("--desc", type=str, default="No user notes provided.")
-
-    args = parser.parse_args()
-
-    print(f" Analyzing {args.image} at Segment {args.segment}...")
-    
-    # Call the new function
-    success, result = analyze_hazard_image(args.image, args.segment, args.time, args.desc)
-    
-    if success:
-        print("\n Final Approved Report:\n")
-        print(json.dumps(result, indent=2))
-        print("\n This report has been securely saved to hazard_db.json")
-    else:
-        print(f"\n Pipeline Failed: {result}")
-        sys.exit(1)
