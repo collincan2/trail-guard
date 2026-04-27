@@ -8,6 +8,7 @@ upload photos and descriptions of problems, while management can see things laid
 *Andrew Cadena - Interface, Risk Assessment, Data Implementation*
 
 ## RUNNING THE APP:
+##### Project on Streamlit: https://trail-guard-lhvrpkrnqx5kgkgirwzkjb.streamlit.app/
 ### Setup:
 1. Open a terminal in the project folder.
 2. Install all required dependencies:
