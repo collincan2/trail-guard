@@ -1,0 +1,146 @@
+[
+  {
+    "trail_segment": 1,
+    "reported_timestamp": "2026-04-25 13:25",
+    "hazard_type": "Debris",
+    "severity_rating": 5,
+    "ai_description": "Multiple large tree trunks have fallen across and completely block a paved road, accompanied by significant wood debris and splinters.",
+    "user_notes": "No user description provided.",
+    "recommended_action": "Mobilize a crew with chainsaws and heavy machinery for immediate removal of large tree trunks and clearing of all debris to reopen the road."
+  },
+  {
+    "trail_segment": 1,
+    "reported_timestamp": "2026-04-25 13:26",
+    "hazard_type": "Debris",
+    "severity_rating": 3,
+    "ai_description": "A significant amount of diverse litter including food wrappers, cans, and broken Styrofoam containers is scattered on the ground next to a tree stump, close to a dirt trail.",
+    "user_notes": "Some small bits of trash litter the ground here",
+    "recommended_action": "Assign groundskeeping to thoroughly clean up all scattered litter and properly dispose of it."
+  },
+  {
+    "trail_segment": 2,
+    "reported_timestamp": "2026-04-25 13:27",
+    "hazard_type": "Park Infrastructure",
+    "severity_rating": 2,
+    "ai_description": "A set of outdoor concrete stairs is heavily overgrown with dense vegetation on both sides, and some plants are encroaching onto the steps themselves. The steps appear worn and potentially slick.",
+    "user_notes": "Greenery around area is a little large",
+    "recommended_action": "Assign groundskeeping to clear overgrown vegetation from both sides and off the steps, and power wash the steps to remove moss and dirt."
+  },
+  {
+    "trail_segment": 2,
+    "reported_timestamp": "2026-04-25 13:28",
+    "hazard_type": "Debris",
+    "severity_rating": 4,
+    "ai_description": "A large fallen tree trunk completely obstructs a narrow dirt trail in a dense forest, requiring hikers to navigate over or around it.",
+    "user_notes": "A fallen tree blocks the pathway and requires going over, under, or slightly around.",
+    "recommended_action": "Assign a maintenance crew with a chainsaw to cut and remove the fallen tree from the trail immediately to restore clear passage."
+  },
+  {
+    "trail_segment": 3,
+    "reported_timestamp": "2026-04-25 13:28",
+    "hazard_type": "Park Infrastructure",
+    "severity_rating": 2,
+    "ai_description": "The narrow dirt trail is flanked by tall, dense grass and wildflowers, with trees and shrubs creating an overgrown canopy that partially shadows the path ahead. The vegetation encroaches on the path, reducing its width.",
+    "user_notes": "Foliage and greenery are a little overgrown, shadowing the path ahead",
+    "recommended_action": "Assign groundskeeping to trim back overgrown foliage and clear encroaching vegetation from the trail to ensure safe passage and visibility."
+  },
+  {
+    "trail_segment": 3,
+    "reported_timestamp": "2026-04-25 13:29",
+    "hazard_type": "Park Infrastructure",
+    "severity_rating": 4,
+    "ai_description": "A park bench with multiple broken and missing wooden slats, exposed rusty metal supports, and debris scattered underneath, rendering it completely unusable and a potential hazard.",
+    "user_notes": "This bench is damaged, and can't be used at all.",
+    "recommended_action": "Assign maintenance to immediately remove the damaged bench and replace it with a new one to ensure public safety."
+  },
+  {
+    "trail_segment": 4,
+    "reported_timestamp": "2026-04-25 13:32",
+    "hazard_type": "Park Infrastructure",
+    "severity_rating": 3,
+    "ai_description": "A paved path exhibits extensive cracking and uneven surfaces, likely caused by tree roots uplifting sections of the asphalt. The cracks are significant enough to create tripping hazards along the path.",
+    "user_notes": "Slight cracks in the sidewalk ahead here",
+    "recommended_action": "Assign maintenance to inspect the extent of the damage and schedule repairs to re-level and resurface the cracked sections of the path to eliminate tripping hazards."
+  },
+  {
+    "trail_segment": 4,
+    "reported_timestamp": "2026-04-25 13:33",
+    "hazard_type": "Park Infrastructure",
+    "severity_rating": 3,
+    "ai_description": "Large tree roots have severely uplifted and cracked the concrete sidewalk, creating an uneven surface and potential tripping hazard. Smaller cracks are also visible across the path.",
+    "user_notes": "Moderate cracks in the sidewalk ahead here right next to the tree",
+    "recommended_action": "Assign a tree and sidewalk specialist to evaluate the roots and repair/re-level the affected sidewalk section to ensure a safe, smooth path."
+  },
+  {
+    "trail_segment": 5,
+    "reported_timestamp": "2026-04-25 13:33",
+    "hazard_type": "Park Infrastructure",
+    "severity_rating": 5,
+    "ai_description": "A powerful geyser of water is erupting from a large crack in the paved ground, creating a significant puddle and displacing gravel, indicative of a major water main break.",
+    "user_notes": "huge water leak spraying everywhere, large crack in ground",
+    "recommended_action": "Contact municipal water utility for emergency shut-off and repair, and cordon off the affected area immediately to prevent public access."
+  },
+  {
+    "trail_segment": 6,
+    "reported_timestamp": "2026-04-25 13:34",
+    "hazard_type": "Park Infrastructure",
+    "severity_rating": 3,
+    "ai_description": "A wooden trail marker post is visibly damaged, with charring at the base and the red and white trail symbol appearing worn or partially obscured.",
+    "user_notes": "trail marker is damaged here",
+    "recommended_action": "Assign maintenance to inspect, repair, or replace the damaged trail marker and investigate the cause of the charring."
+  },
+  {
+    "trail_segment": 6,
+    "reported_timestamp": "2026-04-25 13:50",
+    "hazard_type": "Park Infrastructure",
+    "severity_rating": 2,
+    "ai_description": "A wooden fence has a broken rail, which is detached from one post and leaning towards the ground.",
+    "user_notes": "minor damage to a wooden fence",
+    "recommended_action": "Assign maintenance to repair the broken wooden fence rail, reattaching it securely to the post."
+  },
+  {
+    "trail_segment": 1,
+    "reported_timestamp": "2026-04-25 13:51",
+    "hazard_type": "Debris",
+    "severity_rating": 2,
+    "ai_description": "A medium-sized rock is partially obstructing a dirt trail surrounded by trees and dense undergrowth.",
+    "user_notes": "medium shaped rock slightly blocks trail path",
+    "recommended_action": "Assign groundskeeping to remove the rock from the trail to ensure clear passage."
+  },
+  {
+    "trail_segment": 2,
+    "reported_timestamp": "2026-04-25 13:57",
+    "hazard_type": "Park Infrastructure",
+    "severity_rating": 2,
+    "ai_description": "The parking lot features significantly faded white parking lines, making space delineation unclear, and the asphalt shows minor cracking and wear.",
+    "user_notes": "parking lines are faded in the front of park",
+    "recommended_action": "Assign maintenance to repaint all parking lines and inspect the asphalt for any necessary minor repairs."
+  },
+  {
+    "trail_segment": 3,
+    "reported_timestamp": "2026-04-25 14:40",
+    "hazard_type": "Park Infrastructure",
+    "severity_rating": 4,
+    "ai_description": "A heavily rusted metal door with extensively peeling orange and blue paint, showing significant deterioration and potential sharp edges, possibly indicating an abandoned or neglected structure.",
+    "user_notes": "No user notes provided.",
+    "recommended_action": "Assign maintenance to immediately secure the rusted door to prevent public access. A full assessment of the door's structural integrity and the surrounding structure is required, followed by either removal, repair, or replacement to eliminate sharp edges and lead paint hazards."
+  },
+  {
+    "trail_segment": 4,
+    "reported_timestamp": "2026-04-25 15:29",
+    "hazard_type": "Animal",
+    "severity_rating": 2,
+    "ai_description": "A pile of animal droppings, likely from a deer or similar herbivore, located directly on the forest trail.",
+    "user_notes": "animal droppings on trail",
+    "recommended_action": "Assign groundskeeping to clear animal droppings from the trail to maintain cleanliness and prevent potential spread of pathogens."
+  },
+  {
+    "trail_segment": 2,
+    "reported_timestamp": "2026-04-25 14:15",
+    "hazard_type": "Fire Hazard",
+    "severity_rating": 5,
+    "ai_description": "A significant brush fire is actively burning, visible through the trees with large flames and substantial smoke in the background.",
+    "user_notes": "brush fire in park",
+    "recommended_action": "Immediately contact emergency services (fire department) and evacuate the area. Secure perimeter to prevent public access."
+  }
+]
