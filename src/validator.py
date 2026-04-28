@@ -16,7 +16,7 @@ class HazardReportSchema(BaseModel):
     trail_segment: int = Field(description="The trail segment ID.")
     reported_timestamp: str = Field(description="The exact timestamp.")
     hazard_type: allowedHazards = Field(description="Must exactly match an allowed category.")
-    severity_rating: int = Field(ge=1, le=5, description="Severity from 1 to 5.")
+    severity_rating: int = Field(ge=0, le=5, description="Severity from 1 to 5, 0 if its invalid.")
     ai_description: str 
     user_notes: str 
     recommended_action: str = Field(min_length=10, description="Recommended action.")
