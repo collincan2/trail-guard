@@ -42,7 +42,7 @@ def analyze_segment_risk(segment_id: int):
                 report_time = datetime.strptime(report["reported_timestamp"], "%Y-%m-%d %H:%M")
                 if now - report_time <= timedelta(hours=48):
                     if report.get("severity_rating") == 0:
-                        continue
+                        continue  #Ignores reports that output a 0 on severity rating
                     reports_48h += 1
                     total_severity += report["severity_rating"]
                     cat = report.get('hazard_type', 'Unknown')
