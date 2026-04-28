@@ -58,6 +58,9 @@ def analyze_hazard_image(image_input, segment_id: int, timestamp: str, descripti
     contents = [
         "You are an expert park safety inspector. Analyze the image and the user's metadata to create a report.",
         
+        "CRITICAL RULE: If the image is clearly NOT a park hazard (e.g., a selfie, a meme, indoor furniture, food, or a completely irrelevant image), you MUST classify the hazard_type as 'Other', set the severity_rating to exactly 0, and write 'Discard report' for the recommended action.",
+
+
         "Example 1 Image:", example_img_1,
         "Example 1 Metadata:\nTrail Segment: 2\nTimestamp: 2026-04-14 10:00\nUser Description: This huge fallen tree is blocking the main metal bridge path to the rest of the park.",
         "Example 1 Output: {'trail_segment': 2, 'reported_timestamp': '2026-04-14 10:00', 'hazard_type': 'Debris', 'severity_rating': 5, 'ai_description': 'The tree is blocking the path.', 'user_notes': 'This huge fallen tree is blocking the main metal bridge path to the rest of the park.', 'recommended_action': 'Assign maintenance with a chainsaw to cut and move tree immediately.'}",
