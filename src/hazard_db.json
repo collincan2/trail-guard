@@ -9,24 +9,6 @@
     "recommended_action": "Mobilize a crew with chainsaws and heavy machinery for immediate removal of large tree trunks and clearing of all debris to reopen the road."
   },
   {
-    "trail_segment": 1,
-    "reported_timestamp": "2026-04-29 13:26",
-    "hazard_type": "Debris",
-    "severity_rating": 3,
-    "ai_description": "A significant amount of diverse litter including food wrappers, cans, and broken Styrofoam containers is scattered on the ground next to a tree stump, close to a dirt trail.",
-    "user_notes": "Some small bits of trash litter the ground here",
-    "recommended_action": "Assign groundskeeping to thoroughly clean up all scattered litter and properly dispose of it."
-  },
-  {
-    "trail_segment": 2,
-    "reported_timestamp": "2026-04-29 13:27",
-    "hazard_type": "Park Infrastructure",
-    "severity_rating": 2,
-    "ai_description": "A set of outdoor concrete stairs is heavily overgrown with dense vegetation on both sides, and some plants are encroaching onto the steps themselves. The steps appear worn and potentially slick.",
-    "user_notes": "Greenery around area is a little large",
-    "recommended_action": "Assign groundskeeping to clear overgrown vegetation from both sides and off the steps, and power wash the steps to remove moss and dirt."
-  },
-  {
     "trail_segment": 2,
     "reported_timestamp": "2026-04-29 13:28",
     "hazard_type": "Debris",
