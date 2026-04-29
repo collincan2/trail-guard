@@ -3,7 +3,7 @@
 **(1) problem + pitch** (COLLIN)
 *Introduction of Collin, Andrew*
 
-Our app is Trail Guard, an app designed for park management and visitors. Parks are usually diverse in scale, climate, and staffing, and this app aims to enhance organization for park issues so that dispatched rangers are able to prioritize their workload. 
+Our app is Trail Guard, an app built with gemini vision 2.5 Flash, designed for park management and visitors. Parks are usually diverse in scale, climate, and staffing, and this app aims to enhance organization for park issues so that dispatched rangers are able to prioritize their workload. 
 
 **(2) submit a hazard image live** (ANDREW)  
 
