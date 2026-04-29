@@ -5,15 +5,17 @@
 
 Our app is Trail Guard, an app built with gemini vision 2.5 Flash, designed for park management and visitors. Parks are usually diverse in scale, climate, and staffing, and this app aims to enhance organization for park issues so that dispatched rangers are able to prioritize their workload. 
 
-**(2) submit a hazard image live** (ANDREW)  
+**(2) Show risk across the park, then submit a hazard image live** (ANDREW)  
 
-To start, I will take a hazard that has occurred in the test park [Mustang Park], and upload it to the app. The app will analyze the issue, and then recommend a course of action. Additionally, it will sort it under the park segment where it was reported, categorize it by issue type [Examples: Fire Hazard, Debris], assign it a risk level based on danger or hazard intensity, and timestamp it for reference.
+To start, I will take a hazard that has occurred in the test park [Mustang Park], and upload it to the app. The app will analyze the issue, and then recommend a course of action. Additionally, it will sort it under the park segment where it was reported, categorize it by issue type ,such as debris, animals, etc., assign it a risk level based on danger and the intensity, and timestamp it for reference.
+
+*Upload invalid image(pic of madla building)* *show it displays 0 for severity and that it discards*
 
  *Upload test image*  
  
  *Upload CASE 20 to SEGMENT 7 (stacked dry brush)*  
  
- *Upload CASE 18 to SEGMENT 5 (large black bear, aggressive) [Triggers ESC]*
+ *Upload CASE 18 to SEGMENT 1 (large black bear, aggressive) [Triggers ESC]*
 
   **(3) show JSON validation** (COLLIN)
 
@@ -27,7 +29,7 @@ If it did, it would save in a database, which could be accessed to see issues re
 
 **(4) run risk engine live on a high-traffic segment** (ANDREW)
 
-Here's an example of a high traffic segment -- some parts of a park are more busy than others. In these cases, additional variables can be added to reflect this. For example, in the North Metal Bridge [Segment 5], there is a traffic multiplier of 1.5x to show that issues here are more serious than in the parking lot/front entrance area.
+Here's an example of a high traffic segment -- some parts of a park are more busy than others. In these cases, additional variables can be added to reflect this. For example, in the Trailhead [Segment 1], there is a traffic multiplier of 1.5x to show that issues here are more serious and important than less populated areas.
 
 *run risk engine on HTS, with live analysis*
 
