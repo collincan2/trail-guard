@@ -1,7 +1,7 @@
 [
   {
     "trail_segment": 1,
-    "reported_timestamp": "2026-04-25 13:25",
+    "reported_timestamp": "2026-04-29 13:25",
     "hazard_type": "Debris",
     "severity_rating": 5,
     "ai_description": "Multiple large tree trunks have fallen across and completely block a paved road, accompanied by significant wood debris and splinters.",
@@ -10,7 +10,7 @@
   },
   {
     "trail_segment": 1,
-    "reported_timestamp": "2026-04-25 13:26",
+    "reported_timestamp": "2026-04-29 13:26",
     "hazard_type": "Debris",
     "severity_rating": 3,
     "ai_description": "A significant amount of diverse litter including food wrappers, cans, and broken Styrofoam containers is scattered on the ground next to a tree stump, close to a dirt trail.",
@@ -19,7 +19,7 @@
   },
   {
     "trail_segment": 2,
-    "reported_timestamp": "2026-04-25 13:27",
+    "reported_timestamp": "2026-04-29 13:27",
     "hazard_type": "Park Infrastructure",
     "severity_rating": 2,
     "ai_description": "A set of outdoor concrete stairs is heavily overgrown with dense vegetation on both sides, and some plants are encroaching onto the steps themselves. The steps appear worn and potentially slick.",
@@ -28,7 +28,7 @@
   },
   {
     "trail_segment": 2,
-    "reported_timestamp": "2026-04-25 13:28",
+    "reported_timestamp": "2026-04-29 13:28",
     "hazard_type": "Debris",
     "severity_rating": 4,
     "ai_description": "A large fallen tree trunk completely obstructs a narrow dirt trail in a dense forest, requiring hikers to navigate over or around it.",
@@ -37,7 +37,7 @@
   },
   {
     "trail_segment": 3,
-    "reported_timestamp": "2026-04-25 13:28",
+    "reported_timestamp": "2026-04-29 13:28",
     "hazard_type": "Park Infrastructure",
     "severity_rating": 2,
     "ai_description": "The narrow dirt trail is flanked by tall, dense grass and wildflowers, with trees and shrubs creating an overgrown canopy that partially shadows the path ahead. The vegetation encroaches on the path, reducing its width.",
@@ -46,7 +46,7 @@
   },
   {
     "trail_segment": 3,
-    "reported_timestamp": "2026-04-25 13:29",
+    "reported_timestamp": "2026-04-29 13:29",
     "hazard_type": "Park Infrastructure",
     "severity_rating": 4,
     "ai_description": "A park bench with multiple broken and missing wooden slats, exposed rusty metal supports, and debris scattered underneath, rendering it completely unusable and a potential hazard.",
@@ -55,7 +55,7 @@
   },
   {
     "trail_segment": 4,
-    "reported_timestamp": "2026-04-25 13:32",
+    "reported_timestamp": "2026-04-29 13:32",
     "hazard_type": "Park Infrastructure",
     "severity_rating": 3,
     "ai_description": "A paved path exhibits extensive cracking and uneven surfaces, likely caused by tree roots uplifting sections of the asphalt. The cracks are significant enough to create tripping hazards along the path.",
@@ -64,7 +64,7 @@
   },
   {
     "trail_segment": 4,
-    "reported_timestamp": "2026-04-25 13:33",
+    "reported_timestamp": "2026-04-29 13:33",
     "hazard_type": "Park Infrastructure",
     "severity_rating": 3,
     "ai_description": "Large tree roots have severely uplifted and cracked the concrete sidewalk, creating an uneven surface and potential tripping hazard. Smaller cracks are also visible across the path.",
@@ -73,7 +73,7 @@
   },
   {
     "trail_segment": 5,
-    "reported_timestamp": "2026-04-25 13:33",
+    "reported_timestamp": "2026-04-29 13:33",
     "hazard_type": "Park Infrastructure",
     "severity_rating": 5,
     "ai_description": "A powerful geyser of water is erupting from a large crack in the paved ground, creating a significant puddle and displacing gravel, indicative of a major water main break.",
@@ -82,7 +82,7 @@
   },
   {
     "trail_segment": 6,
-    "reported_timestamp": "2026-04-25 13:34",
+    "reported_timestamp": "2026-04-29 13:34",
     "hazard_type": "Park Infrastructure",
     "severity_rating": 3,
     "ai_description": "A wooden trail marker post is visibly damaged, with charring at the base and the red and white trail symbol appearing worn or partially obscured.",
@@ -91,7 +91,7 @@
   },
   {
     "trail_segment": 6,
-    "reported_timestamp": "2026-04-25 13:50",
+    "reported_timestamp": "2026-04-29 13:50",
     "hazard_type": "Park Infrastructure",
     "severity_rating": 2,
     "ai_description": "A wooden fence has a broken rail, which is detached from one post and leaning towards the ground.",
@@ -100,7 +100,7 @@
   },
   {
     "trail_segment": 1,
-    "reported_timestamp": "2026-04-25 13:51",
+    "reported_timestamp": "2026-04-29 13:51",
     "hazard_type": "Debris",
     "severity_rating": 2,
     "ai_description": "A medium-sized rock is partially obstructing a dirt trail surrounded by trees and dense undergrowth.",
@@ -109,7 +109,7 @@
   },
   {
     "trail_segment": 2,
-    "reported_timestamp": "2026-04-25 13:57",
+    "reported_timestamp": "2026-04-29 13:57",
     "hazard_type": "Park Infrastructure",
     "severity_rating": 2,
     "ai_description": "The parking lot features significantly faded white parking lines, making space delineation unclear, and the asphalt shows minor cracking and wear.",
@@ -118,7 +118,7 @@
   },
   {
     "trail_segment": 3,
-    "reported_timestamp": "2026-04-25 14:40",
+    "reported_timestamp": "2026-04-29 14:40",
     "hazard_type": "Park Infrastructure",
     "severity_rating": 4,
     "ai_description": "A heavily rusted metal door with extensively peeling orange and blue paint, showing significant deterioration and potential sharp edges, possibly indicating an abandoned or neglected structure.",
@@ -127,7 +127,7 @@
   },
   {
     "trail_segment": 4,
-    "reported_timestamp": "2026-04-25 15:29",
+    "reported_timestamp": "2026-04-29 15:29",
     "hazard_type": "Animal",
     "severity_rating": 2,
     "ai_description": "A pile of animal droppings, likely from a deer or similar herbivore, located directly on the forest trail.",
@@ -136,7 +136,7 @@
   },
   {
     "trail_segment": 2,
-    "reported_timestamp": "2026-04-25 14:15",
+    "reported_timestamp": "2026-04-29 14:15",
     "hazard_type": "Fire Hazard",
     "severity_rating": 5,
     "ai_description": "A significant brush fire is actively burning, visible through the trees with large flames and substantial smoke in the background.",
