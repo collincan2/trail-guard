@@ -84,7 +84,7 @@ with tab2:
                 st.markdown("---")
                 
                 if data['escalation_triggered']:
-                    st.error("RISK ESCALATION TRIGGERD")
+                    st.error("RISK ESCALATION TRIGGERED")
                     st.warning(f"**AI Dispatch Note:** {data['escalation_note']}")
                 else:
                     st.success("Segment is currently operating within acceptable safety parameters.")
