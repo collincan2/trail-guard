@@ -1,6 +1,5 @@
 # src/frontview/app.py
 import streamlit as st
-#https://mcdn.wallpapersafari.com/medium/38/52/gZu9hN.jpg
 page_element="""
 <style>
 [data-testid="stAppViewContainer"]{
