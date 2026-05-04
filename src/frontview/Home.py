@@ -1,6 +1,18 @@
 # src/frontview/app.py
 import streamlit as st
 
+page_element="""
+<style>
+[data-testid="stAppViewContainer"]{
+
+  background-image: url("https://mcdn.wallpapersafari.com/medium/38/52/gZu9hN.jpg");
+  background-size: cover;
+}
+</style>
+"""
+
+st.markdown(page_element, unsafe_allow_html=True)
+
 # Streamlit init
 st.set_page_config(
     page_title="Trailguard", 
