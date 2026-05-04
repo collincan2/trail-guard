@@ -1,11 +1,11 @@
 # src/frontview/app.py
 import streamlit as st
-
+#https://mcdn.wallpapersafari.com/medium/38/52/gZu9hN.jpg
 page_element="""
 <style>
 [data-testid="stAppViewContainer"]{
 
-  background-image: url("https://mcdn.wallpapersafari.com/medium/38/52/gZu9hN.jpg");
+  background-image: url("https://github.com/collincan2/trail-guard/blob/main/src/PilotPhotos/blackbear18.jpg?raw=true");
   background-size: cover;
 }
 </style>
