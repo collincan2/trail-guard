@@ -10,10 +10,9 @@ st.set_page_config(
 
 st.title("🌲 Trailguard 🛡️")
 st.markdown("---")
-st.markdown(<div style="background-image: url(https://github.com/collincan2/trail-guard/blob/main/src/PilotPhotos/treefall4.jpg?raw=true); height: 400px; padding: 20px;">
-  ""
-</div>
-)
+st.markdown("<div style="background-image: url(https://github.com/collincan2/trail-guard/blob/main/src/PilotPhotos/treefall4.jpg?raw=true); height: 400px; padding: 20px;">
+  "fill"
+</div>")
 
 st.markdown("""
 ### Welcome to the Trailguard Park Management Dashboard!
