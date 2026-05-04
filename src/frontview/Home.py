@@ -11,6 +11,12 @@ page_element="""
   background-color: rgba(0,0,0,0);
 }
 </style>
+<script>
+[data-testid="stSidebar"]> div:first-child{
+background-image: url("https://mcdn.wallpapersafari.com/medium/89/87/X7GDE5.jpg");
+background-size: cover;
+}
+</script>
 """
 
 st.markdown(page_element, unsafe_allow_html=True)
