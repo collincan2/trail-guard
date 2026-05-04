@@ -7,6 +7,9 @@ page_element="""
   background-image: url("https://github.com/collincan2/trail-guard/blob/main/src/PilotPhotos/blackbear18.jpg?raw=true");
   background-size: cover;
 }
+[data-testid="stHeader"]{
+  background-color: rgba(0,0,0,0);
+}
 </style>
 """
 
