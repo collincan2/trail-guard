@@ -1,5 +1,6 @@
 # src/frontview/app.py
 import streamlit as st
+# Background image/other page elements
 page_element="""
 <style>
 #[data-testid="stAppViewContainer"]{
